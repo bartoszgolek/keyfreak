@@ -1,0 +1,42 @@
+﻿using System;
+namespace KeyFreak.WinApi
+{
+	public enum WH
+	{
+		WH_JOURNALRECORD = 0,
+		WH_JOURNALPLAYBACK = 1,
+		WH_KEYBOARD = 2,
+		WH_GETMESSAGE = 3,
+		WH_CALLWNDPROC = 4,
+		WH_CBT = 5,
+		WH_SYSMSGFILTER = 6,
+		WH_MOUSE = 7,
+		WH_HARDWARE = 8,
+		WH_DEBUG = 9,
+		WH_SHELL = 10,
+		WH_FOREGROUNDIDLE = 11,
+		WH_CALLWNDPROCRET = 12,
+		WH_KEYBOARD_LL = 13,
+		WH_MOUSE_LL = 14
+	}
+
+	public enum WM
+	{
+		WM_KEYUP = 0x0101,
+		WM_KEYDOWN = 0x0100,
+		WM_SYSKEYDOWN = 0x0104,
+		WM_SYSKEYUP = 0x0105,
+		WM_HOTKEY = 0x0312
+	}
+
+	[Flags]
+	public enum MOD : int
+	{
+		MOD_NOMOD = 0x0000,
+		MOD_ALT = 0x0001,
+		MOD_CONTROL = 0x0002,
+		MOD_SHIFT = 0x0004,
+		MOD_WIN = 0x0008,
+		MOD_NOREPEAT = 0x4000
+	}
+}

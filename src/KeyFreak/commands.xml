@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<keyFreak>
+	<keyCommands>
+		<command id="forcom" description="ForCom" commandType="GroupCommand" key="F" />
+		<command id="win" description="Windows" commandType="GroupCommand" key="W" />
+		<command id="cmd" description="Console" commandType="ShellCommand" parameters="C:\Program Files\Console2\Console.exe" key="C" iconPath="images\cmd.png" />
+
+		<command id="notepad" parent="win" description="Notatnik" commandType="ShellCommand" parameters="notepad.exe" key="N" />
+		<command id="calc" parent="win" description="Kalkulator" commandType="ShellCommand" parameters="calc.exe" key="C" />
+
+		<command id="runmarket" parent="forcom" description="Start Market" commandType="ShellCommand" parameters="C:\hg\Market3\bin\Forcom.Market.exe" key="S" />
+		<command id="marketservice" parent="forcom" description="MarketService" commandType="GroupCommand" key="M" />
+
+		<command id="startservice" parent="marketservice" description="Start" commandType="ShellCommand" parameters="sc;start MarketService" key="R" />
+		<command id="stopservice" parent="marketservice" description="Stop" commandType="ShellCommand" parameters="sc;stop MarketService" key="S" />
+	</keyCommands>
+</keyFreak>
